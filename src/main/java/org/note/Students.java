@@ -4,20 +4,20 @@ import java.time.LocalDate;
 
 public class Students extends Person{
     private String group;
-    private Tutor tutor;
+    private Tutors tutors;
 
     public Students(int id, String name, String lastname, LocalDate birthdate, String email, String phone, String group,
-                   Tutor tutor) {
+                   Tutors tutors) {
         super(id, name, lastname, birthdate, email, phone);
         this.group = group;
-        this.tutor = tutor;
+        this.tutors = tutors;
     }
 
     public String getGroup() {
         return group;
     }
 
-    public Tutor getTutor() {
-        return tutor;
+    public Tutors getTutor() {
+        return tutors;
     }
 }
