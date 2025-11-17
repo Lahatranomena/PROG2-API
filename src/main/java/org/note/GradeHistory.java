@@ -36,4 +36,8 @@ public class GradeHistory {
     public double getOldValue() {
         return oldValue;
     }
+
+    public Instant getTimestamp() {
+        return changeAt;
+    }
 }
